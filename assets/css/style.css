@@ -545,7 +545,7 @@ p {
   -webkit-box-shadow: 0px 0px 29px 0px rgba(134, 134, 134, 0.25);
   -moz-box-shadow: 0px 0px 29px 0px rgba(134, 134, 134, 0.25);
   box-shadow: 0px 0px 29px 0px rgba(134, 134, 134, 0.25);
-  padding: 30px 0;
+  padding: 5px 0;
   background-color: #fff;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
@@ -554,7 +554,7 @@ p {
   transition: all 0.3s ease-out 0s;
 }
 .navigation.sticky {
-  padding: 20px 0;
+  padding: 5px 0;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -975,16 +975,28 @@ p {
 /*===========================
         3.ABOUT css 
 ===========================*/
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+.skill-icon {
+  padding: 4px 4px;
+  width: 15%;
+}
+@media only screen and (min-width: 401px) and (max-width: 991px) {
   .about-area {
     padding-top: 90px;
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
+  }
+  .skill-icon {
+    padding: 4px 2px;
+    width: 10%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 400px) {
   .about-area {
     padding-top: 70px;
-    padding-bottom: 80px;
+    /* padding-bottom: 80px; */
+  }
+  .skill-icon {
+    padding: 4px 2px;
+    width: 15vw;
   }
 }
 
@@ -1011,12 +1023,6 @@ p {
   .about-content ul li {
     width: 100%;
     float: none;
-  }
-}
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  .about-content ul li {
-    width: 50%;
-    float: left;
   }
 }
 .about-content .single-info .info-icon i {
@@ -2316,4 +2322,149 @@ p.form-message.error.form-message.error {
   cursor: pointer;
 }
 
+#resume {
+  background: #fff;
+  padding-top: 90px;
+  padding-bottom: 72px;
+  overflow: hidden;
+}
+
+#resume a,
+#resume a:visited {
+  color: #11abb0;
+}
+#resume a:hover,
+#resume a:focus {
+  color: #313131;
+}
+
+#resume h1 {
+  font: 18px/24px "opensans-bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+#resume h1 span {
+  border-bottom: 3px solid #11abb0;
+  padding-bottom: 6px;
+}
+#resume h3 {
+  font: 25px/30px "opensans-bold", sans-serif;
+}
+
+#resume .header-col {
+  padding-top: 9px;
+}
+#resume .main-col {
+  padding-right: 10%;
+}
+
+.education,
+.work {
+  margin-bottom: 48px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e8e8e8;
+}
+#resume .info {
+  font: 16px/24px "librebaskerville-italic", serif;
+  color: #6e7881;
+  margin-bottom: 18px;
+  margin-top: 9px;
+}
+#resume .info span {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+#resume .date {
+  font: 15px/24px "opensans-regular", sans-serif;
+  margin-top: 6px;
+}
+
+.css-xpotm3 {
+  display: inline-flex;
+  appearance: none;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  user-select: none;
+  position: relative;
+  white-space: nowrap;
+  vertical-align: middle;
+  outline: transparent solid 2px;
+  outline-offset: 2px;
+  width: auto;
+  line-height: 1.2;
+  border-radius: 10px;
+  font-weight: 600;
+  transition-property: background-color,border-color,color,fill,stroke,opacity,box-shadow,transform;
+  transition-duration: 200ms;
+  height: 2.5rem;
+  min-width: 2.5rem;
+  font-size: 16px;
+  padding-inline-start: 1rem;
+  padding-inline-end: 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 0px;
+}
+.css-1h84u6v {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+    white-space: nowrap;
+    vertical-align: middle;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    width: auto;
+    line-height: 1.2;
+    border-radius: 10px;
+    font-weight: 600;
+    transition-property: background-color,border-color,color,fill,stroke,opacity,box-shadow,transform;
+    transition-duration: 200ms;
+    height: 2.5rem;
+    min-width: 2.5rem;
+    font-size: 16px;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+    background: #E2E8F0;
+    padding: 0px;
+}
+.chakra-button{
+  margin-left: 2rem;
+  color:inherit;
+  cursor: pointer;
+  text-transform: none;
+  overflow: visible;
+  font-family: inherit;
+  border:none;
+}
+
+.css-onkibi {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  line-height: 1em;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  color: currentColor;
+  vertical-align: middle;
+}
 /*# sourceMappingURL=style.css.map */
