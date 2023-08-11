@@ -937,8 +937,8 @@
 /* default
  --------------------------------------------------------------- */
 .row {
-  width: 96%;
-  max-width: 1020px;
+  /* width: 96%; */
+  /* max-width: 1020px; */
   margin: 0 auto;
 }
 /* fixed width for IE8 */
